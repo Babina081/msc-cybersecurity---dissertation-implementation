@@ -1,0 +1,45 @@
+{
+  "rooms": [
+    "Bathroom",
+    "Bedroom",
+    "DiningRoom",
+    "Kitchen",
+    "LivingRoom",
+    "LoungeChair",
+    "OutsideDoor",
+    "WorkArea"
+  ],
+  "feature_names": [
+    "room_Bathroom",
+    "room_Bedroom",
+    "room_DiningRoom",
+    "room_Kitchen",
+    "room_LivingRoom",
+    "room_LoungeChair",
+    "room_OutsideDoor",
+    "room_WorkArea",
+    "n_rooms",
+    "transitions",
+    "hour_sin",
+    "hour_cos",
+    "duration_s",
+    "events_per_min",
+    "on_fraction"
+  ],
+  "class_list": [
+    "Watch_TV",
+    "Hygiene",
+    "Cook",
+    "Sleep",
+    "Toilet",
+    "Dress",
+    "Relax",
+    "Wash_Dishes",
+    "Eat",
+    "Take_Meds",
+    "Leave_Home",
+    "Enter_Home"
+  ],
+  "window": 30,
+  "step": 15
+}
