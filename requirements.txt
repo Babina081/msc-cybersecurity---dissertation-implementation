@@ -1,30 +1,36 @@
-contourpy==1.3.3
-cycler==0.12.1
-filelock==3.29.5
-fonttools==4.63.0
-fsspec==2026.6.0
-Jinja2==3.1.6
-joblib==1.5.3
-kiwisolver==1.5.0
-MarkupSafe==3.0.3
-matplotlib==3.11.0
-mpmath==1.3.0
-narwhals==2.23.0
-networkx==3.6.1
-numpy==2.5.1
-opacus==1.6.0
-opt_einsum==3.4.0
-packaging==26.2
-pandas==3.0.3
-pillow==12.3.0
-pyparsing==3.3.2
-python-dateutil==2.9.0.post0
-scikit-learn==1.9.0
-scipy==1.18.0
-setuptools==81.0.0
-six==1.17.0
-sympy==1.14.0
-threadpoolctl==3.6.0
-torch==2.12.1
-typing_extensions==4.16.0
-tzdata==2026.2
+# Python dependencies for the federated activity recognition project.
+# Install with: pip install -r requirements.txt
+
+# --- Core packages (ordered by importance) ---
+torch==2.12.1                     # model training
+numpy==2.5.1                      # arrays and feature matrices
+pandas==3.0.3                     # reading and processing CSV data
+opacus==1.6.0                     # differential privacy for training
+scikit-learn==1.9.0               # metrics and data splitting
+matplotlib==3.11.0                # plotting results
+
+# --- Supporting packages (installed automatically) ---
+contourpy==1.3.3                  # contour plotting (used by matplotlib)
+cycler==0.12.1                    # colour/style cycling (used by matplotlib)
+filelock==3.29.5                  # file locking (used by torch)
+fonttools==4.63.0                 # font handling (used by matplotlib)
+fsspec==2026.6.0                  # file system access (used by torch)
+Jinja2==3.1.6                     # templating (used by torch)
+joblib==1.5.3                     # parallel processing (used by scikit-learn)
+kiwisolver==1.5.0                 # layout solver (used by matplotlib)
+MarkupSafe==3.0.3                 # safe string handling (used by Jinja2)
+mpmath==1.3.0                     # precise maths (used by sympy)
+narwhals==2.23.0                  # dataframe compatibility layer
+networkx==3.6.1                   # graph operations (used by torch)
+opt_einsum==3.4.0                 # tensor operation optimisation (used by opacus)
+packaging==26.2                   # version handling
+pillow==12.3.0                    # image handling (used by matplotlib)
+pyparsing==3.3.2                  # text parsing (used by matplotlib)
+python-dateutil==2.9.0.post0      # date parsing (used by pandas)
+scipy==1.18.0                     # scientific computing (used by scikit-learn)
+setuptools==81.0.0                # package installation tools
+six==1.17.0                       # Python 2/3 compatibility (used by dateutil)
+sympy==1.14.0                     # symbolic maths (used by torch)
+threadpoolctl==3.6.0              # thread control (used by scikit-learn)
+typing_extensions==4.16.0         # extra type hints (used by torch)
+tzdata==2026.2                    # time zone data (used by pandas)
