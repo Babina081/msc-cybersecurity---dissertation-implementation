@@ -1,5 +1,5 @@
 """
-check_setup.py
+check_setup.py - step 1
 Run this once after installing your libraries.
 It confirms every tool your dissertation needs is installed and working.
 """
